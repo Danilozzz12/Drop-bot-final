@@ -14,6 +14,10 @@ DROP_PERCENTAGE = 10
 CHECK_INTERVAL = 60
 
 bot = Bot(token=TELEGRAM_TOKEN)
+
+# Mensagem de teste ao iniciar
+bot.send_message(chat_id=TELEGRAM_CHAT_ID, text="🤖 Bot iniciado com sucesso!")
+
 old_odds = {}
 
 def get_odds():
